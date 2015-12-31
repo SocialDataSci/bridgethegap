@@ -13,3 +13,4 @@ We'd add the following to the file `changes-bridgethegap.sql`:
 UPDATE MMS_Results SET CelebrationSchoolStatus = NULL WHERE CelebrationSchoolStatus = 'null';
 ```
 
+Then add or run tests to validate your change. Finally send a pull request.
