@@ -43,9 +43,10 @@ for database in ${BRIDGE_THE_GAP_DBS[@]}
 do
   output=${TEST_OUTPUT_DIR}/${database}-counts-$(date +%Y%m%d-%H%M%S).out
   rm -f $output
-  for table in $(mysql --silent -u "${MYSQL_USER}" "${database}" -e "show tables")
+  for table in $(mysql --silent -u "${MYSQL_USER}" "${database}" -e "show tables" | sort)
   do
-    mysql --silent -u "${MYSQL_USER}" "${database}" -e "select count(1) as '${database}.${table}' from $table" >> $output
+    echo "${table}" >> $output
+    mysql --silent -u "${MYSQL_USER}" "${database}" -e "select count(1) from $table" >> $output
   done
   goldenFile=$GOLDEN_DIR/${database}-counts.out
   if [[ -f $goldenFile ]]
