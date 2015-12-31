@@ -19,7 +19,7 @@ There are many ways to contribute:
 2. Clone this repo: `git clone https://github.com/SocialDataSci/bridgethegap.git`
 3. Download the latest data: `./scripts/load-database.sh -u root -p -v latest`
 
-If everyone went OK, if you connect to MySQL, you will have the following databases:
+If everyone went OK, after connecting to MySQL, you will have the following databases:
 
 - bridgethegap - combined school level files
 - data4good - school level yearly raw files
