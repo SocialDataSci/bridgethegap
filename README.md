@@ -44,7 +44,7 @@ similar to contributing to any other Github project. See [Github Hello World for
 
 # Directories in this project
 
-cache   -- ignored by git, simple cache of internet based dependencies
-golden -- contains the golden files used to verify updates were applied correctly
-scripts -- scripts used to load the data and run tests
-updates -- sql scripts which can be modifed to update the database
+- cache   -- ignored by git, simple cache of internet based dependencies
+- golden -- contains the golden files used to verify updates were applied correctly
+- scripts -- scripts used to load the data and run tests
+- updates -- sql scripts which can be modifed to update the database
