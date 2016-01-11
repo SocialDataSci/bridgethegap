@@ -37,6 +37,11 @@ If everyone went OK, after connecting to MySQL, you will have the following data
 
 If you don't have expirence with git or GitHub, see [Github Hello World for more details](https://guides.github.com/activities/hello-world/).
 
+## Flag a Data Issue
+
+1. [Follow the instructions here to create an issue](https://help.github.com/articles/creating-an-issue/)
+2. If you wish to work on the issue yourself, leave a comment stating so. Otherwise someone else may duplicate your effort.
+
 ## Enhance the tools
 
 The tools are scripts and infrastructure to help users share and enhance the data. These enhancments are 
